@@ -1,23 +1,3 @@
-function doPost(e) {
-  var sheet = SpreadsheetApp.getActiveSpreadsheet().getActiveSheet();
-  var params = e.parameter;
-  
-  sheet.appendRow([
-    new Date(),
-    params.顧客姓名,
-    params.聯絡電話,
-    params.LINE名稱,
-    params.預約項目,
-    params.卸甲需求,
-    params.期望預約日期,
-    params.期望預約時段,
-    params.備註或款式想法（例：需延甲、想要特定配色）
-  ]);
-  
-  return ContentService.createTextOutput(
-    JSON.stringify({ "result": "success" })
-  ).setMimeType(ContentService.MimeType.JSON);
-}
 <!DOCTYPE html>
 <html lang="zh-TW">
 <head>
