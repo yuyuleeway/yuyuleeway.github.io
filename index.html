@@ -36,14 +36,13 @@
     <section class="text-center space-y-3 py-2">
       <h2 class="text-lg font-medium text-[#7a6250] tracking-widest">—— WELCOME ——</h2>
       <p class="text-xs sm:text-sm text-[#665547] leading-relaxed">
-        歡迎來到 瑜寓｜Leeway。<br>我們專注於精緻手足保養與高質感凝膠美甲，為您打造獨一無二的專屬美學。
       </p>
     </section>
 
     <!-- 價目表 -->
     <section class="bg-white p-6 sm:p-8 rounded-2xl shadow-sm border border-[#f0e6dd]">
       <h2 class="text-xl font-medium text-center text-[#544336] mb-6 flex items-center justify-center gap-2">
-        <span>📝</span> 服務項目與價目
+        <span></span> 服務項目與價目
       </h2>
       <div class="grid grid-cols-1 md:grid-cols-2 gap-6 text-sm">
         <div class="p-4 bg-[#faf6f0] rounded-xl border border-[#f2e7dc]">
@@ -63,10 +62,11 @@
         <span>📌</span> 預約須知（請務必詳閱）
       </h2>
       <ul class="list-disc list-inside text-xs text-[#736052] space-y-1.5 leading-relaxed">
-        <li>為維持服務品質，預約請預留 <strong>3 - 3.5 小時</strong> 操作時間。</li>
-        <li>預約請保留彈性，遲到超過 15 分鐘將自動取消或簡化項目。</li>
-        <li>若有病甲、灰指甲或皮膚傳染疾病，請先就醫，暫不提供美甲服務。</li>
-        <li>表單送出後，我們將於 24 小時內透過 官方LINE 與您確認時段與訂金事宜。</li>
+        <li>暫無開放攜伴</li>
+        <li>為維持服務品質，預約請預留 <strong>3 - 3.5 小時</strong> 操作時間</li>
+        <li>預約請保留彈性，遲到超過 10 分鐘將自動取消或簡化項目</li>
+        <li>若有病甲、灰指甲或皮膚傳染疾病，請先就醫，暫不提供美甲服務</li>
+        <li>表單送出後，我們將於 24 小時內透過 官方LINE 與您確認是否預約成功</li>
       </ul>
     </section>
 
@@ -84,7 +84,7 @@
             class="w-full px-4 py-2.5 rounded-lg border border-[#dcd0c4] focus:ring-1 focus:ring-[#9e826c] focus:outline-none text-xs sm:text-sm bg-[#fcfaf7]">
         </div>
 
-        <!-- 聯絡電話與 LINE ID -->
+        <!-- 聯絡電話與 LINE 名稱 -->
         <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
           <div>
             <label class="block text-xs sm:text-sm font-medium text-[#544336] mb-1">聯絡電話 <span class="text-red-400">*</span></label>
@@ -172,7 +172,7 @@
     // -------------------------------------------------------------
     // 1. 請將你的 Google Apps Script 部署網址貼在下面單引號內
     // -------------------------------------------------------------
-    const GAS_WEB_APP_URL = "您的_GOOGLE_APPS_SCRIPT_網址_寫在這裡";
+    const GAS_WEB_APP_URL = "https://script.google.com/macros/s/AKfycbwUvPdvKtDXQqihdhKagZ_9bzec6ORAJxVPA_6lMKFzFuO2GzWrHObGGn5iCxlKcYTOpA/exec";
 
     // -------------------------------------------------------------
     // 2. 客滿 / 公休日設定區：把滿約或休假的日期寫在這裡（格式：YYYY-MM-DD）
@@ -202,7 +202,7 @@
     form.addEventListener('submit', function(e) {
       e.preventDefault();
 
-      if (GAS_WEB_APP_URL === 'https://script.google.com/macros/s/AKfycbwUvPdvKtDXQqihdhKagZ_9bzec6ORAJxVPA_6lMKFzFuO2GzWrHObGGn5iCxlKcYTOpA/exec' || GAS_WEB_APP_URL === "") {
+      if (GAS_WEB_APP_URL === "https://script.google.com/macros/s/AKfycbwUvPdvKtDXQqihdhKagZ_9bzec6ORAJxVPA_6lMKFzFuO2GzWrHObGGn5iCxlKcYTOpA/exec" || GAS_WEB_APP_URL === "") {
         alert("提示：請先在程式碼中填寫正確的 Google Apps Script 網址！");
         return;
       }
