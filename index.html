@@ -168,7 +168,7 @@
 
   <!-- JavaScript -->
   <script>
-    const GAS_WEB_APP_URL = "您的_GOOGLE_APPS_SCRIPT_網址_寫在這裡";
+    const GAS_WEB_APP_URL = 'https://script.google.com/macros/s/AKfycbwUvPdvKtDXQqihdhKagZ_9bzec6ORAJxVPA_6lMKFzFuO2GzWrHObGGn5iCxlKcYTOpA/exec';
 
     const form = document.getElementById('bookingForm');
     const submitBtn = document.getElementById('submitBtn');
@@ -176,7 +176,7 @@
     form.addEventListener('submit', function(e) {
       e.preventDefault();
 
-      if (GAS_WEB_APP_URL === "您的_GOOGLE_APPS_SCRIPT_網址_寫在這裡") {
+      if (GAS_WEB_APP_URL === 'https://script.google.com/macros/s/AKfycbwUvPdvKtDXQqihdhKagZ_9bzec6ORAJxVPA_6lMKFzFuO2GzWrHObGGn5iCxlKcYTOpA/exec') {
         alert("提示：請先參考說明文件設定 Google Apps Script 後端網址！");
         return;
       }
