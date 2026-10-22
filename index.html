@@ -51,6 +51,9 @@
             <li class="flex justify-between"><span>經典單色 / 跳色</span> <span class="font-semibold text-[#9e826c]">$ 600 起</span></li>
             <li class="flex justify-between"><span>貓眼 / 鏡面</span> <span class="font-semibold text-[#9e826c]">$ 700 起</span></li>
             <li class="flex justify-between"><span>設計款</span> <span class="font-semibold text-[#9e826c]">$ 900 起</span></li>
+          </ul>
+        </div>
+      </div>
     </section>
 
     <!-- 預約須知 -->
@@ -62,7 +65,7 @@
         <li>為維持服務品質，預約請預留 <strong>3 - 3.5 小時</strong> 操作時間。</li>
         <li>預約請保留彈性，遲到超過 15 分鐘將自動取消或簡化項目。</li>
         <li>若有病甲、灰指甲或皮膚傳染疾病，請先就醫，暫不提供美甲服務。</li>
-        <li>表單送出後，我們將於 24 小時內透過 LINE 與您確認時段與訂金事宜。</li>
+        <li>表單送出後，我們將於 24 小時內透過 官方LINE 與您確認時段與訂金事宜。</li>
       </ul>
     </section>
 
@@ -88,7 +91,7 @@
               class="w-full px-4 py-2.5 rounded-lg border border-[#dcd0c4] focus:ring-1 focus:ring-[#9e826c] focus:outline-none text-xs sm:text-sm bg-[#fcfaf7]">
           </div>
           <div>
-            <label class="block text-xs sm:text-sm font-medium text-[#544336] mb-1">LINE ID / LINE 名稱 <span class="text-red-400">*</span></label>
+            <label class="block text-xs sm:text-sm font-medium text-[#544336] mb-1">LINE名稱<span class="text-red-400">*</span></label>
             <input type="text" name="lineId" required placeholder="以便後續確認預約"
               class="w-full px-4 py-2.5 rounded-lg border border-[#dcd0c4] focus:ring-1 focus:ring-[#9e826c] focus:outline-none text-xs sm:text-sm bg-[#fcfaf7]">
           </div>
@@ -165,7 +168,7 @@
 
   <!-- JavaScript -->
   <script>
-    const GAS_WEB_APP_URL = "https://script.google.com/macros/s/AKfycbz7TUv_XRG6yEdfTxsKUs0uQaGmjMrbEjAtXFDJuJgMEVRfBjX8yTniB0PuAWjQib1ICw/exec";
+    const GAS_WEB_APP_URL = "您的_GOOGLE_APPS_SCRIPT_網址_寫在這裡";
 
     const form = document.getElementById('bookingForm');
     const submitBtn = document.getElementById('submitBtn');
@@ -173,7 +176,7 @@
     form.addEventListener('submit', function(e) {
       e.preventDefault();
 
-      if (GAS_WEB_APP_URL === "https://script.google.com/macros/s/AKfycbz7TUv_XRG6yEdfTxsKUs0uQaGmjMrbEjAtXFDJuJgMEVRfBjX8yTniB0PuAWjQib1ICw/exec") {
+      if (GAS_WEB_APP_URL === "您的_GOOGLE_APPS_SCRIPT_網址_寫在這裡") {
         alert("提示：請先參考說明文件設定 Google Apps Script 後端網址！");
         return;
       }
