@@ -190,7 +190,7 @@
     form.addEventListener('submit', function(e) {
       e.preventDefault();
 
-      if (GAS_WEB_APP_URL === "https://script.google.com/macros/s/AKfycbxjCbJON1f4c4c-dJUvTD9gqGwUTCv46ZbWSVoR2THmTUL5HEYMNaQhhFTu1Nn4sTDzpw/exec") {
+      if (GAS_WEB_APP_URL === 'https://script.google.com/macros/s/AKfycbxjCbJON1f4c4c-dJUvTD9gqGwUTCv46ZbWSVoR2THmTUL5HEYMNaQhhFTu1Nn4sTDzpw/exec') {
         alert("提示：請先參考說明文件設定 Google Apps Script 後端網址！");
         return;
       }
